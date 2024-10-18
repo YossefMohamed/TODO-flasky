@@ -4,9 +4,11 @@ from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
 from .config import Config
 
+# Initialize the extensions
 db = SQLAlchemy()
 migrate = Migrate()
 jwt = JWTManager()
+
 
 def create_app(config_class=Config):
     app = Flask(__name__)
@@ -20,3 +22,5 @@ def create_app(config_class=Config):
     app.register_blueprint(api_bp)
 
     return app
+
+
