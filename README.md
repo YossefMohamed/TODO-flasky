@@ -1,6 +1,4 @@
-Here's a simple README for your to-do app:
 
-```markdown
 # To-Do App
 
 ## Description
